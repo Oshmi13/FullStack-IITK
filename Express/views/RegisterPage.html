@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr color="orange" />
+    <h1 align="center"> Register Page</h1>
+    <hr color="green" />
+    <feildset >
+        <legend>Add New User</legend>
+        <!-- action = "path where form is posted" -->
+        <!-- When submit button is pressed the method post is executed and data is posted on specified path -->
+        <!-- Now the request is send to Server (myServer.js) -->
+        <!-- In the server the method is matched (post) and the path URL (action) -->
+        
+        <form method="post" action="/formHandler">
+            <input type="text" name="unm" placeholder="Entername" /> <br/>
+            <input type="submit" name="subBtn" />
+        </form> 
+    </feildset>
+</body>
+</html>

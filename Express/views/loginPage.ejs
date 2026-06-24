@@ -1,0 +1,49 @@
+<%- include('./partials/header.ejs') %>
+
+
+
+<!-- This page doesn t belongs to user as well as administrator -->
+
+<section>
+    <div class="container mt-3">
+        <div class="table-responsive">
+            <form method="post" action="" >
+                <table class="table table-bordered table-striped">        
+            <tbody>
+                
+                <tr>
+                    <td>User Email</td>
+                    <td><input type="email" name="mailId"/> </td>
+                </tr>
+
+                <tr>
+                    <td>User Password</td>
+                    <td><input type="text" name="pwd" /> </td>
+                </tr>
+                
+                <tr>
+                    
+                    <td colspan="2" align="center"><input class="btn btn-warning" type="submit" name="loginBtn" value="Login" /> </td>
+                </tr>
+            </tbody>
+
+                </table>
+            </form>
+
+            <% if(success) { %>
+                <p class="alert alert-info">
+                    <%= message %>            
+                </p>
+            <% } else { %>  
+                <p class = "alert alert-warning">
+                    <%= message %>
+                </p>
+
+            <% } %>
+        </div>
+    </div>
+</section>
+
+
+
+<%- include('./partials/footer.ejs')   %>

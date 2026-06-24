@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" >
+
+        /* learn this to align the content in center */
+        body
+        {
+            display: flex;
+            justify-content: center;
+
+        }
+        #d1
+        {
+            width: 200px;
+            height: 200px;
+            background-color: navy;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #d1:hover
+        {
+            background-color: blueviolet;
+
+            /* transform: translateX(100px);
+            transform: translateY(100px); */
+            /* translate(X,Y) */
+            transform: translate(-100px, -100px);
+            /* transform: translate(100px, 100px); */
+
+            transform: scaleX(3);
+            transform: rotate(50deg);
+            transform: skew()
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        Div 1
+    </div>
+    
+</body>
+</html>
+

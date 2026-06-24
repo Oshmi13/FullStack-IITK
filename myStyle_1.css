@@ -1,0 +1,53 @@
+/* External style sheet */
+body
+{
+    background-color: aqua;
+
+    
+    background-image: url(./images/Rose_1.jpg);
+
+    /* control repition of images */
+    background-repeat:  no-repeat;
+
+    /* background-attachment: scroll;
+    background-attachment: local; */
+
+    /* The background image stays fixed in place, even when the page or the element scrolls. */
+    background-attachment: fixed;
+    
+    /* default-centre ,right, bottom , left, left top, top right, bottom right */
+    background-position: center;
+    /* background-position: 50px 100px;
+    background-position: 50%; */
+
+
+   background-size: 100% 100%;
+   
+    /*  default-top to bottom,to left,to top right  */
+    /* background: linear-gradient(to right,red,blue,yellow);
+    background: radial-gradient(red,blue,yellow);
+    background-attachment: fixed; */
+} 
+
+
+div
+{
+    background-color:brown;
+    color:chartreuse;
+}
+h2
+{
+    /* CSS sets the text color using the RGB color model.
+    255 - The red component (maximum intensity).
+    0 - The green component (no green).
+    72 - The blue component (medium-low intensity). */
+
+    /* color:rgb(255, 0, 72); */
+
+    color:blue;
+}
+
+p
+{
+    font-size: 50px;
+}

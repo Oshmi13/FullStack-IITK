@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style text="text/css">
+    div
+    {
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* if position value is static or at default value then top left right bottom will not work.
+    if postion relative or absolute or fixed then z index, top ,right,...will work
+      */
+
+    
+    /* for overlapping use z-index */
+    #d1
+    {
+        position: relative;
+        background-color:  yellow;
+        /* z-index: 0; */
+        z-index: 1;
+
+    }
+
+    /* d2 will overlap d1 */
+    #d2 
+    {
+        background-color:  blueviolet;
+        position: relative;
+        top: 50px;
+        left: -50px;
+        /* z-index: 0; */
+
+        z-index: 1;
+        
+    }
+
+    /* d3 will overlap d2 */
+    #d3 
+    {
+        
+        background-color:  green;
+        position: relative;
+        top: 100px;
+        left: -100px;
+        /* z-index: 0; */
+
+        z-index: -1;
+        
+    }
+
+
+    </style>
+<body>
+    
+    <div id="d1">
+        Div 1
+    </div>
+    <div id="d2">
+        Div 1
+    </div>
+    <div id="d3">
+        Div 1
+    </div>
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+        /* element selector */
+        /* input[placeholder]  only selects password*/
+        /* input[placeholder*="Name"]   will select all with name placeholder */
+        input[placeholder], input[type='number']
+        {
+            border: 2px solid red;
+        }
+        p
+        {
+            border: 1px solid;
+            padding: 20px;
+        }
+        p:hover 
+        {
+            background-color: navy;
+            color: aquamarine;
+
+        }
+
+    </style>
+<body>
+    
+    Enter Name: <input type="text"  minlength="5" placeholder="User Name" /> <br />
+    Enter Name: <input type="password"  placeholder="Eg:Hp@" /> <br />
+    Enter Name: <input type="number"  min="1" max="10" /> <br />
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eligendi commodi doloribus asperiores molestias corrupti similique aut impedit, voluptate fugiat praesentium ea dicta eos. Maiores suscipit eligendi dolorem molestias placeat.
+    </p>
+
+</body>
+</html>

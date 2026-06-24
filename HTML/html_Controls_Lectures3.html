@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- under action write form handler(php page)to post the data on that page -->
+    <!-- <form action=""> -->
+    <!-- if action is not included then the data is stored on the same page -->
+    <!-- <form method="post" action=" "> 
+        post method is used to post bulk of data, form data is not added to the URL-->
+    <!-- get method - data is stored in url -->
+    <!-- http/https - Data is stored in the paylod of protocol,inspect the url you have mentioned in the action
+    -->
+    <!-- Difference between read only and disable  Asked in interview-->
+     <!-- The value of password do not persist and rest all data is write while 
+     accessing data thorugh inspect-> Network -->
+     <!-- nonvalidate , autocomplete="off" -->
+    <form>
+    <table border="2px" width="400px" align="centre" bgcolor="lightgrey">
+
+        <tbody>
+            <tr>
+
+                <td> User Name</td>
+                <td> 
+                    <!-- input user name -->
+                     <!-- required- you have to write  -->
+                    <input type="text" name="unm" minlenght="3" placeholder="Enter Name"  required />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> Password</td>
+                <td> 
+                    <!-- The text is not visisble -->
+                    <input type="password" name="pwd" minlength="3" maxlength="10" placeholder="eg : Hp@123" />
+                </td>
+            </tr>
+
+            <tr>
+                <td> Email</td>
+                <td> 
+                    <!-- mail id pattern validation is checked -->
+                    <input type="email"  name="mailId" value="demo@mail.com" />
+                </td>
+            </tr>
+            <tr>
+                <td> Date of Birth </td>
+                <td>
+                    <!--  (min: year-month-date)  -->
+                    <input type="date" min="2024-10-25" max="2025-06-25" name="dob"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Birth Time</td>
+                <td>
+                    <!--  (min: year-month-date)  -->
+                    <input type="time" />
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <!-- can add multiline text , enables scrolling -->
+                    <textarea rows="5" cols="20"addr="addr"> 
+
+                    </textarea>
+                </td> 
+            </tr>
+            <tr>
+                <td> Date/Time</td>
+                <td>
+                    <!--  (min: year-month-date)  -->
+                    <input type="datetime-local" />
+                </td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>
+                    <!--  (min: year-month-date)  -->
+                    <input type="color" />
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <!--  (min: year-month-date) 
+                        use common name to select only One radio button -->
+                    <input type="radio" name="gender" value="Male"/>Male
+                    <br />
+                    <input type="radio" name="gender" value="Female"/>Female
+                    <br />
+                    <input type="radio" name="gender"  value="Others"/>Others
+                    <br />
+                    <br />
+                    <input type="radio" name="gen"/>Sal>5 Lpa
+                    <br />
+                    <input type="radio" name="gen"/>Sal>10 Lpa
+                    <br />
+                    <input type="radio" name="gen" />Sal>15 Lpa
+                    <br />
+
+                </td>
+            </tr>
+            <tr>
+                <td> Hobbies </td>
+                <td>
+                    <!-- One than one selection -->
+                    <input type="Checkbox" name="hob1" value="Swim" />Swimmming
+                    <input type="Checkbox" name="hob2" value="Dance" />Dancing
+                    <input type="Checkbox" name="hob3" value="Read" />Reading
+                    <input type="Checkbox" name="hob4" value="Play"/>Playing
+                    <input type="Checkbox" name="Hob5" value="Cycle"  />Cycling
+                    
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Qualification
+                </td>
+                <td>
+                    <select name="qul">
+                        <!-- <select mutiple>  
+                              can use this for multiple selection -->
+                        <option selected disabled >~~Select~~</option>
+                        <option >BTECH</option>
+                        <option >MTECH</option>
+                        <option disabled>BCA</option>
+                        <option>MCA</option>
+                        <option>BBA</option>
+                        <option>MBA</option>
+
+                        <!-- disable attribue can be used with any tag  and
+                            only with option tag -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City Name
+                </td>
+                <td>
+                    <select name="cityN">
+                       
+                        <option selected disabled >~~Select~~</option>
+                        <optgroup label="UP">
+                        <option >Kanpur</option>
+                        <option >Lucknow</option>
+                        <option disabled>Agra</option>
+                        </optgroup>
+
+                        <optgroup label="MP">
+                        <option>Bhopal</option>
+                        <option>Indore</option>
+                        <option>Sagar</option>
+                        </optgroup>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    University Name
+                </td>
+                <td>
+                    <input type="text" list="mylist" name="uniNm"/>
+                    <datalist id="'mylist">
+                        <option>HBTI</option>
+                        <option>VIT</option>
+                        <option>AKTU</option>
+                        <option>DU</option>
+                        <option>JNU</option>
+                        <option>KIIT</option>
+                        <option>AMU</option>
+                        <option>CU</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>CGPA</td>
+                <td>
+                    <input type="number" min= "1" max="10" step="0.5" name="cgpa" />
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="range" min="99"  max="999" value="799" name="price"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Hidden</td>
+                <td> <input type="hidden" value="Pro_ID_1005" name="proId"/> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td> 
+                    <input type="search" />
+                </td>
+            </tr>
+            <tr>
+                <td>Profile Pic</td>
+                <td>
+                    <!-- By using multiple we can select many files -->
+                    <!-- accept - For displaying only specific files -->
+                    <input type="file" accept=".jpg, .png" mutiple name="proPic" />
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="2">
+                    <!-- BUTTONS -->
+                    <!-- submit - is to post the data -->
+
+                     <!-- server side - submit button is used -->
+                    <input type ="submit" value="Register"/>
+
+                    <!-- client side - reset button is used -->
+                    <input type ="reset" />
+                    <input type="button" value="button"/>
+                    <input type="image" src="./" width="'100px" height="100px"/>
+                    
+                    <button type="submit">Login</button>
+                </td>
+            </tr>
+            <!-- Name is added to post the data -->
+            <!-- The value write in username ..password..is read by and assigned to control name -->
+            <!-- Form post the data on the same page -->
+        </tbody>
+    </table>
+    </form> 
+
+
+
+
+
+
+
+</body>
+</html>

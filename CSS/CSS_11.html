@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>Document</title>
+    <style type="text/css">
+    div
+    {
+        background-color: aqua;
+        color: navy;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        /* Still after adding all 4 properties div will not be on the same line becoz they are block level elements */
+        /* display: list-item; */
+        display: block;
+
+        /*  conversion to inline */
+        /* display: inline; */
+    } 
+    span
+    {
+        background-color: yellow;
+        color: navy;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+
+        /* The width and height of inline cannot be changed */
+
+        /* display: inline; */
+        
+        /* This is used to get the elements on same line and at the same time to change height and width */
+        display: inline-block;
+    }
+    
+    #d3
+    {   /*    display : none; 
+        The space use by the element is then used by the next element. */
+
+        /**/
+        /*display : block; */
+
+        /*The space use by the element is not used by the next element.
+        The space remains empty and not used by the next element */
+        /* visibility: hidden; */
+
+        visibility: hidden;
+
+    }
+
+        
+        
+    </style>
+<body>
+
+    <!-- Block level elements -->
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div id="d3">
+        Div 3
+    </div>
+
+    <!-- Inline element -->
+    <span>span 1</span>
+    <span>span 2</span>
+    
+    
+    
+</body>
+</html>

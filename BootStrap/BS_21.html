@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Space & Defence Visit</title>
+    <style>
+        body {
+            background: #f4f8fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .radio-group input, .checkbox-group input {
+            margin-right: 5px;
+        }
+        .form-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d6efd;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-actions button:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register for Space & Defence Center Visit</h2>
+    <form method="post" action="submit_form.php">
+        <label for="unm">Full Name</label>
+        <input type="text" id="unm" name="unm" placeholder="Enter your name" required>
+
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Password" minlength="3" maxlength="10">
+
+        <label for="mailId">Email</label>
+        <input type="email" id="mailId" name="mailId" placeholder="example@mail.com">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="addr">Address</label>
+        <textarea id="addr" name="addr" rows="4" placeholder="Your address here..."></textarea>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+
+        <label>Hobbies</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="hobby" value="Reading"> Reading</label>
+            <label><input type="checkbox" name="hobby" value="Swimming"> Swimming</label>
+            <label><input type="checkbox" name="hobby" value="Cycling"> Cycling</label>
+            <label><input type="checkbox" name="hobby" value="Gaming"> Gaming</label>
+        </div>
+
+        <label for="qul">Qualification</label>
+        <select id="qul" name="qul">
+            <option selected disabled>--Select--</option>
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>MBA</option>
+            <option>BBA</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select>
+
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option selected disabled>--Select City--</option>
+            <option>Delhi</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+        </select>
+
+        <label for="proPic">Upload Profile Picture</label>
+        <input type="file" id="proPic" name="proPic" accept=".jpg,.jpeg,.png">
+
+        <div class="form-actions">
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

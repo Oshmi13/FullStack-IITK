@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    div
+    {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border: 1px solid;
+        display: inline-block;
+    }
+
+    #d1
+    {
+        position: static;
+        top: 50px;
+    }
+
+    #d2
+    {
+        /* relative to itself */
+        position: relative;
+        top: 250px;
+        left: 50px;
+
+        /* movement fromm initial position */
+    }
+
+    #d3
+    {
+        background-color: yellowgreen;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+    
+</style>
+<body>
+    
+    <div id="d1">Div 1</div>
+    <div id="d2">Div 2</div>
+    <div id="d3">Div 3</div>
+    <div id="d4">Div 4</div>
+
+</body>
+</html>

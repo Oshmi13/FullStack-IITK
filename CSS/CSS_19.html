@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" >
+
+        /* block type element */
+        nav ul
+        {
+            background-color: antiquewhite;
+            /* width: 200px; */
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul > li
+        {
+            display: inline-block;
+            /* border-bottom: 1px solid white; */
+        }
+        nav ul>li>a
+        {
+            text-decoration: none;
+            background-color: rgb(209, 150, 196);
+            display: block;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+        nav ul>li>a:hover
+        {
+            background-color: rgb(126, 128, 105);
+            color:rgb(18, 9, 98);
+            border-left: 2px solid rgb(51, 212, 175);
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- navigation bar are list of hyperlinks -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About us</a> </li>
+            <li><a href="#">Our team</a> </li>
+            <li><a href="#">Contact us</a> </li>
+            <li><a href="#">Our services</a> </li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

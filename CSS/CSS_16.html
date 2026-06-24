@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+        /*
+         extra small Devices : <576px;
+        Small Devices: 576px to 767px
+        Medium Devices : 768px to 991px
+        Large Devices: 992px to 1199px 
+        Extra large Devices: 1200px to 
+        */
+    
+        /* @media(orientation:landscape)
+        {
+           body 
+           {
+               background-color: navy;
+           }
+        }
+        @media(orientation:portrait)
+        {
+       
+           body
+           {
+               background-color: aqua;
+           }
+        }
+    */
+    @media screen and (min-width: 1200px) {
+
+        body 
+        {
+        background-color: yellow;
+        }
+        #ld, #md, #sm, #xsm
+        {
+            
+        }
+ 
+    }
+   
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+
+       body 
+       {
+        background-color: blue;
+       }
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px){
+
+        body 
+    {
+        background-color: red;
+    }   
+
+    }
+    @media screen and (min-width: 576px) and (max-width: 767px){
+
+        body 
+    {
+        background-color: rgb(0, 255, 119);
+    }   
+ 
+    }
+    @media screen and (min-width: 576px) {
+
+        body 
+    {
+    background-color: #d900ff;
+    }   
+
+    }
+
+    
+
+    #p1
+    {
+        background-color: aliceblue;
+        padding: 20px;
+        width: 700px;
+    }
+    #p2
+    {
+        background-color: blue;
+        padding: 20px;
+
+        /* we set max width of an element..it arranges itself acc to small screen devices */
+        max-width: 700px;
+        /* we set min-width */
+        min-width: 400px;
+    }
+   
+   
+    </style>
+</head>
+<body>
+    
+    <p id="p1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam amet veritatis nobis possimus, quaerat quidem totam dignissimos iusto quo in perspiciatis, laudantium magni autem debitis pariatur provident delectus quisquam tenetur?
+    </p>
+    <p id="p2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia laudantium minima, obcaecati quae amet beatae ut repudiandae eius corporis tenetur, eaque quia nobis officia ex similique soluta blanditiis commodi pariatur.
+    </p>
+    
+</body>
+</html>

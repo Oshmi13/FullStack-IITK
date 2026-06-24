@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr color="orange" />
+    <h1 align="center"> EJS display Data Page</h1>
+    <hr color="green" />
+
+   <table border="2">
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Age</th>
+            <th>User Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%  userData.forEach((data)=> { %>
+            <tr>
+                <th> <%= data._id %> </th>
+                <th> <%= data.name %> </th>
+                <th> <%= data.age %> </th>
+                <th> <%= data.gender %> </th>
+            </tr>
+            <% }) %>
+    </tbody>
+   </table>
+    
+
+</body>
+</html>
+

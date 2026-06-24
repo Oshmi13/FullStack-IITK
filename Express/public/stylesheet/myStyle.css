@@ -1,0 +1,15 @@
+h1
+{
+    background-color: navy;
+    color: aqua;
+    height : 100px;
+    line-height: 100px;
+
+}
+
+ /* Go to header.ejs file and  */
+.carousel-item img
+{
+    width : 100px;
+    height : 300px;
+}

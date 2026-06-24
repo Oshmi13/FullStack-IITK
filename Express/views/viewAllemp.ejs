@@ -1,0 +1,47 @@
+<%- include('./partials/header.ejs')   %>
+<%- include('./partials/myNav.ejs')   %>
+
+
+
+<section>
+    <div class="container mt-3">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee Email</th>
+                <th>Employee Password</th>
+                <!-- <th>Employee DOB</th> -->
+                <th>Employee Status</th>
+                <!-- <th>Employee Joining Data</th> -->
+                <th>Edit</th>
+                <th> Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% allEmp.forEach((record)=>{ %>
+
+                <tr>
+                    <td><%= record.EmpName  %></td>
+                    <td><%= record.EmpEmail  %></td>
+                    <td><%= record.EmpPassword  %></td>
+                    <!-- <td><%= record.EmpDOB  %></td> -->
+                    <td><%= record.isActive  %></td>
+                    <!-- <td><%= record.regTime  %></td> -->
+                    <td><a href="/admin/edit/<%= record._id  %>" >Edit</a></td>
+                    <td><a href="/admin/delete/<%= record._id  %>" >Delete</a></td>
+                </tr>            
+
+            <% }) %>    
+
+        </tbody>
+
+            </table>
+        </div>
+    </div>
+</section>
+
+
+
+<%- include('./partials/footer.ejs')   %>

@@ -1,0 +1,43 @@
+<%- include('./partials/header.ejs')   %>
+<%- include('./partials/myNav.ejs')   %>
+
+
+<section>
+    <div class="container mt-3">
+        <div class="table-responsive">
+            <form method="post" action="/admin/update" >
+                <table class="table table-bordered table-striped">        
+            <tbody>
+                <tr>
+                    <td>Employee Name</td>
+                    <td><input type="text" name="enm" value="<%= Emp.EmpName  %>"  readonly /> </td>
+                </tr>
+                <tr>
+                    <td>Employee Password</td>
+                    <td><input type="text" name="pwd" value="<%= Emp.EmpPassword  %>" /> </td>
+                </tr>
+                <tr>
+                    <td>Employee Email</td>
+                    <td><input type="email" name="mailId" value="<%= Emp.EmpEmail  %>" readonly /> </td>
+                </tr>
+                <tr>
+                    <input type="hidden" name="eid" value="<%= Emp._id  %>"  />              
+                    <td colspan="2" align="center"><input class="btn btn-warning" type="submit" name="updateBtn" value="Update" /> </td>
+                </tr>
+            </tbody>
+
+                </table>
+            </form>
+
+            <% if(success) { %>
+                <p class="alert alert-info">
+                    <%= message %>            
+                </p>
+            <% } %>    
+        </div>
+    </div>
+</section>
+
+
+
+<%- include('./partials/footer.ejs')   %>

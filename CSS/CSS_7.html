@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+
+        /* implements on the first child of the tag like under body tag and div tag for h1 */
+        h1:first-child
+        {
+            line-height: 100px;
+            background-color: navy;
+            color: aquamarine;
+            text-align: center;
+        }
+        h1:last-child
+        {
+            line-height: 100px;
+            background-color: navy;
+            color: aquamarine;
+            text-align: center;
+        }
+        /* For selecting any nth child */
+        /* Number, keyword(even/odd), formula(an+b) */
+        /* pass number of child as an arguement*/
+
+        h1:nth-child(3)
+        {
+            line-height: 100px;
+            background-color: navy;
+            color: aquamarine;
+            text-align: center;
+        }
+         /* Number, keyword(even/odd) */
+        h1:nth-child(even)
+        {
+            line-height: 100px;
+            background-color: navy;
+            color: aquamarine;
+            text-align: center;
+        }
+
+        table, td, th
+        {
+            border: 1px solid;
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        /* starting from 3rd row with intervals of 2 */
+        /* (5n+3) starting from 3rd row with intervals of 5 */
+        /* formula(an+b) */
+        tr:nth-child(2n+3)
+        {
+            background-color: aqua;
+        }
+
+        /* tr:nth-child(odd)
+        {
+            background-color:aqua;
+        }
+        tr:nth-child(odd)
+        {
+            background-color:aqua;
+        } */
+
+        /* if valid then, */
+        input:valid
+        {
+            background-color: green;
+
+        }
+        input:invalid
+        {
+            background-color: red;
+
+        }
+
+
+
+
+
+    </style>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <h1>Heading 4</h1>
+    <h1>Heading 5</h1>
+
+    <input type="number" min="5" max="10" />
+    <div>
+        <h1>Heading 6</h1>
+        <h1>Heading 7</h1>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>EmpNo</th>
+                <th>EmpNmae</th>
+                <th>EmpEmail</th>
+
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+            <tr>
+
+                <td>Emp1001</td>
+                <td>Scahin</td>
+                <td>sachin@gmail.com</td>
+            </tr>
+        </thead>
+    </table>
+    
+</body>
+</html>

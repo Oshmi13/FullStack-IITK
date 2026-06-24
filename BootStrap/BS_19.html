@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- add lib of bootstrap to run -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+        <form method="post" class="was-validated" >
+            <div class="form-group">
+            
+                <label for="unm">User Name</label>
+                <input type="text" id="unm" class="form-control" required/>
+                <div class="valid-feedback">Valid Value</div>
+                <div class="invalid-feedback">Feild cannot be left blank</div>
+            </div>
+            
+            <!-- in bootstrap wrap inside div tag -->
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" class="form-control" />
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" id="acc" class="form-check-input" />
+                <label for="acc" class="form-check-label">I accept terms and conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+        </form>
+    
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
